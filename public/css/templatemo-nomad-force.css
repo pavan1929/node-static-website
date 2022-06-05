@@ -599,7 +599,7 @@ strong {
 
 .map-iframe {
   display: block;
-  filter: grayscale(100);
+  /* filter: grayscale(100); */
 }
 
 /*---------------------------------------
