@@ -4,7 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "noe index.js",
+    "docker:ls": "docker image ls",
+    "docker:ps": "docker container ls",
+    "docker:build": "docker build --file Dockerfile --tag=helloworld .",
+    "docker:run": "docker run -p 3000:3000 -d --name=helloworld helloworld",
+    "docker:stop": "docker stop helloworld",
+    "docker:shell": "docker run -it -p 3000:3000 helloworld bash",
+    "docker:remove-all": "docker rm --force $(docker ps -a -q) && docker rmi --force $(docker images -q)"
   },
   "author": "pavan",
   "license": "ISC",
@@ -12,3 +20,4 @@
     "express": "^4.17.1"
   }
 }
+
