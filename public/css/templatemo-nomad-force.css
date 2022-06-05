@@ -391,6 +391,19 @@ strong {
   margin-bottom: 10px;
 }
 
+.background {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.invitation{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
 .team-thumb {
   background: var(--white-color);
   position: absolute;
